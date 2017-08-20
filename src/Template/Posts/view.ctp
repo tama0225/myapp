@@ -35,7 +35,7 @@ $this->assign('title', 'ブログ詳細');
   'url' => ['controller'=>'Comments', 'action'=>'add']
 ]); ?>
 
-<!--<?= $this->Form->input('body'<span class="crayon-sy">,</span><span class="crayon-sy">[</span><span class="crayon-s">'label'</span> <span class="crayon-o">=</span><span class="crayon-o">></span> <span class="crayon-s">'コメント', 'required' => true</span><span class="crayon-sy">]</span>); ?>-->
+<?= $this->Form->input('body',['label' => 'コメント', 'required' => true]); ?>
 <?= $this->Form->hidden('post_id', ['value'=>$post->id]); // 記事と紐付けるIDをhiddenで渡す。?>
 <?= $this->Form->button('コメント'); ?>
 <?= $this->Form->end(); ?>
